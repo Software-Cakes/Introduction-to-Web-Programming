@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <title>W2 Exercise</title>
+</head>
+<body>
+    <header>
+        <h1>Detectives Corner Directory</h1>
+    </header>
+    <main>
+        <table id="directory" border="1">
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Profile Photo</th>
+            </tr>
+            <tr>
+                <td>ShrelockHolmes</td>
+                <td>sherlock.holmes@detectivescorner.com</td>
+                <td>X</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>john.watson84</td>
+                <td>john.watson@detectivescorner.com</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>pg_1994</td>
+                <td>piper.gravestones@detectivescorner.com</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+        </table>
+        <small>** X stands for admin. **</small><br>
+        <button id="empty-table">Empty the Table</button>
+        
+        <h3><br>Add Your Contact</h3>
+        <div class="contact">
+            Username: <input type="text" name="username" id="input-username"><br><br>
+            Email: <input type="text" name="email" id="input-email"><br><br>
+            Admin Role: <input type="checkbox" name="role" id="input-admin"><br>
+            <small>If you have the Admin role, please check the box.</small><br><br>
+            Profile Photo: <input type="file" id="input-image"><br><br>
+            <button id="submit-data" type="button">Enter</button>
+        </div>
+    </main>
+</body>
+</html>
