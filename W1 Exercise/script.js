@@ -11,11 +11,15 @@ if(document.readyState !== "loading") {
 function initializeCode() {
     // Change "Hello world" to "Moi maailma"
     const printButton = document.getElementById("my-button");
-    const moiMaailma = "Moi maailma"
+    const helloWorld = "Hello world";
+    const moiMaailma = "Moi maailma";
 
     printButton.addEventListener("click", function() {
-        document.getElementById("text").innerHTML = moiMaailma;
-        console.log(moiMaailma)
+        document.getElementById("text").innerHTML = helloWorld;
+        console.log(helloWorld)
+
+        const textChange = document.getElementsByTagName("h1")[0];
+        textChange.textContent = moiMaailma
     })
 
 
